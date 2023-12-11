@@ -15,4 +15,4 @@ Instructions:
   Now run script!
   
 For now, codes from companies like Amazon and Steam are available as examples!
-It's important to note that all information is taken from open sources and provided solely for informational purposes. Using these codes on real company websites may be illegal
+It's important to note that all information is taken from open sources and provided solely for informational purposes. Using these codes on real company websites may be illegal!This information is for learning purposes only!!
