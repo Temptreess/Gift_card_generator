@@ -27,12 +27,13 @@ while True:
     print(Fore.BLUE + "What you want to generate?")
     print(Fore.YELLOW + "1.Amazon\n"
                         "2.Steam\n"
-                        "3.\n"
-                        "4.\n"
+                        "3.Working on it\n"
+                        "4.Working on it\n"
+                        "5.Working on it\n"
                         "5.Exit")
     user_choice = input()
 
-    if user_choice == "1":
+    if user_choice == "1" or user_choice == "Amazon" :
         def generate_code(length):
             letters_and_digits = string.ascii_uppercase + string.digits
             code = ''.join(random.choice(letters_and_digits) for _ in range(length))
@@ -55,7 +56,7 @@ while True:
         for code in generated_codes:
             print(code)
 
-    elif user_choice == "2":
+    elif user_choice == "2" or user_choice == "Steam":
         def generate_code():
             code = '-'.join(
                 ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(5)) for _ in range(3))
@@ -65,7 +66,7 @@ while True:
 
         num_of_codes = int(input("Enter codes count: "))
 
-        # Генерация указанного количества кодов
+
         generated_codes = [generate_code() for _ in range(num_of_codes)]
 
 
@@ -73,6 +74,9 @@ while True:
         for code in generated_codes:
             print(code)
 
-    elif user_choice == "5":
+
+    elif user_choice == "exit" or user_choice == "Exit":
         print("Okay, finish")
         break
+    else:
+        print("Sorry, but now i don't now this code.")
